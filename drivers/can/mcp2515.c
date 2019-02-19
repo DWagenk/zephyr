@@ -623,8 +623,8 @@ static const struct mcp2515_config mcp2515_config_1 = {
 	.int_thread_stack_size = CONFIG_CAN_MCP2515_INT_THREAD_STACK_SIZE,
 	.int_thread_priority = CONFIG_CAN_MCP2515_INT_THREAD_PRIO,
 #ifdef CONFIG_CAN_MCP2515_GPIO_SPI_CS
-	.spi_cs_pin = DT_MICROCHIP_MCP2515_0_CS_GPIO_PIN,
-	.spi_cs_port = DT_MICROCHIP_MCP2515_0_CS_GPIO_CONTROLLER,
+	.spi_cs_pin = DT_MICROCHIP_MCP2515_0_CS_GPIOS_PIN,
+	.spi_cs_port = DT_MICROCHIP_MCP2515_0_CS_GPIOS_CONTROLLER,
 #endif  /* CAN_MCP2515_GPIO_SPI_CS */
 	.tq_sjw = CONFIG_CAN_SJW,
 	.tq_prop = CONFIG_CAN_PROP_SEG,
